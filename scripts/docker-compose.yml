@@ -1,0 +1,28 @@
+# 先例（Prior）的本地 PostgreSQL。
+#
+#   docker compose -f scripts/docker-compose.yml up -d
+#
+# 端口用 5433，避免与本机既有的 5432 冲突；设置页的 DSN 默认值与之对应：
+#   postgres://postgres:postgres@127.0.0.1:5433/prior
+#
+# pgvector 有官方镜像 pgvector/pgvector:pg16；本地拉不到镜像时用 postgres:16，
+# 检索会自动回退到 real[] 向量 + 应用侧余弦（功能一致，只是没有 HNSW 索引）。
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: prior-pg
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: prior
+    ports:
+      - "5433:5432"
+    volumes:
+      - prior-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d prior"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  prior-pgdata:

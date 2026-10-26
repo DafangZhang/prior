@@ -1,0 +1,6 @@
+{
+  "name": "Prior",
+  "identifier": "app.prior.mygo",
+  "version": "0.1.0",
+  "out": "build"
+}

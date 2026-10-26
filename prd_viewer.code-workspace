@@ -1,0 +1,87 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.bracketPairColorization.enabled": true,
+    		"editor.guides.bracketPairs":"active",
+		"go.toolsEnvVars": {
+			"GOPRIVATE": "codeup.aliyun.com/*",
+			"GOPROXY": "https://goproxy.cn/ ,direct",
+			"GONOPROXY": "codeup.aliyun.com/*",
+			"GONOSUMDB": "codeup.aliyun.com/*",
+			"GO111MODULE": "on",
+		 },
+		 "terminal.integrated.env.linux": {
+			"GOPRIVATE": "codeup.aliyun.com/*",
+			"GOPROXY": "https://goproxy.cn/ ,direct",
+			"GONOPROXY": "codeup.aliyun.com/*",
+			"GONOSUMDB": "codeup.aliyun.com/*",
+			"GO111MODULE": "on",
+		 },
+		
+		 "terminal.integrated.env.osx": {
+			"GOPRIVATE": "codeup.aliyun.com/*",
+			"GOPROXY": "https://goproxy.cn/ ,direct",
+			"GONOPROXY": "codeup.aliyun.com/*",
+			"GONOSUMDB": "codeup.aliyun.com/*",
+			"GO111MODULE": "on",
+		 },
+		 "terminal.integrated.env.windows": {
+			"GOPRIVATE": "codeup.aliyun.com/*",
+			"GOPROXY": "https://goproxy.cn/ ,direct",
+			"GONOPROXY": "codeup.aliyun.com/*",
+			"GONOSUMDB": "codeup.aliyun.com/*",
+			"GO111MODULE": "on",
+		},
+		"go.docsTool": "guru",
+		"editor.quickSuggestionsDelay": 0,
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+		"editor.codeActionsOnSave": {
+
+
+
+
+
+
+		
+		},
+		"editor.language.colorizedBracketPairs": [
+			["[","]"],
+			["(",")"],
+			["{","}"]
+		],
+		"git-graph.dialog.merge.noFastForward": false,
+		"editor.fontFamily": "'Cascadia Code', monospace",
+		"terminal.integrated.fontFamily": "MesloLGS NF",
+		"editor.fontSize": 15,
+		"editor.hover.delay": 0,
+
+		"go.useLanguageServer": true,
+		"[go]": {
+    		"editor.snippetSuggestions": "bottom",
+    		"editor.formatOnSave": false,
+    		"editor.codeActionsOnSave": {
+				"source.organizeImports": "explicit"
+			}
+		},
+		"gopls": {
+   			 "usePlaceholders": false, // add parameter placeholders when completing a function
+
+			
+		},
+		"files.eol": "\n",
+		"editor.rulers": [
+		
+		],
+		"go.alternateTools": {
+			
+		},
+		//"github.copilot.inlineSuggest.enable": false, // formatting only supports LF line endings
+
+
+
+	}
+}
