@@ -538,9 +538,6 @@ func (a *app) settingsAbout(c *ui.Context, p palette) {
 	settingRow(c, p, T("Version"), "", func() { ui.Text(c, "0.1.0").FontSize(12.5).TextColor(p.muted) })
 	settingRow(c, p, T("Build"), "", func() { ui.Text(c, "dev").FontSize(12.5).TextColor(p.muted) })
 	settingRow(c, p, T("License"), "", func() { ui.Text(c, "MIT").FontSize(12.5).TextColor(p.muted) })
-	settingRow(c, p, T("Reference project"), T("The mygo app the interface follows."), func() {
-		ui.Text(c, "missuo/motrix-mygo").FontSize(12.5).TextColor(p.muted).SingleLine()
-	})
 }
 
 // syncPGForm fills the Environment page's connection fields from a DSN,

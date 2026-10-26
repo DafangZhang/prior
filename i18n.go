@@ -328,8 +328,6 @@ var zhCN = map[string]string{
 	"Version":                               "版本",
 	"Build":                                 "构建",
 	"License":                               "许可证",
-	"Reference project":                     "参考项目",
-	"The mygo app the interface follows.":   "界面语言参考的 mygo 原生应用。",
 	"Settings saved":                        "设置已保存",
 	"Changes discarded":                     "已放弃更改",
 	"Defaults restored; save to apply":      "已恢复默认值，保存后生效",
